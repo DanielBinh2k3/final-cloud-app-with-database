@@ -55,7 +55,7 @@
                     <div id="exam-{{lesson.id}}" class="collapse">
                         <div class="card-body">
                             <!-- A choice submission form example-->
-                            <form id="questionform" action="point to a submit view" method="post">
+                            <form id="questionform" action="/onlinecourse/{{ course.id }}/submit/" method="post">
 
                                     {% for question in lesson.question_set.all %}
                                         <div class="card mt-1">
